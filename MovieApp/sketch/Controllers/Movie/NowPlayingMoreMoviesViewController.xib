@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowPlayingMoreMoviesViewController" customModule="MovieApp" customModuleProvider="target">
+            <connections>
+                <outlet property="nowPlayingMoreMoviesCollectionView" destination="91y-Hk-hW6" id="iBa-j0-TuJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfi-vz-7DY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzs-mV-v65">
+                            <rect key="frame" x="16" y="8" width="390" height="48"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Gzs-mV-v65" secondAttribute="trailing" constant="8" id="2fk-DX-tbv"/>
+                        <constraint firstAttribute="bottom" secondItem="Gzs-mV-v65" secondAttribute="bottom" constant="8" id="MMm-l1-76A"/>
+                        <constraint firstItem="Gzs-mV-v65" firstAttribute="leading" secondItem="Vfi-vz-7DY" secondAttribute="leading" constant="16" id="SO5-ys-h0j"/>
+                        <constraint firstAttribute="height" constant="64" id="SeO-Di-eu2"/>
+                        <constraint firstItem="Gzs-mV-v65" firstAttribute="top" secondItem="Vfi-vz-7DY" secondAttribute="top" constant="8" id="ojs-pI-onM"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="91y-Hk-hW6">
+                    <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcO-23-dSC">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="91y-Hk-hW6" secondAttribute="trailing" id="3BA-zQ-HfB"/>
+                <constraint firstItem="91y-Hk-hW6" firstAttribute="top" secondItem="Vfi-vz-7DY" secondAttribute="bottom" id="DGg-A8-zp6"/>
+                <constraint firstItem="Vfi-vz-7DY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GId-4m-Yb2"/>
+                <constraint firstItem="Vfi-vz-7DY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ik8-R6-raR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="91y-Hk-hW6" secondAttribute="bottom" id="QCh-8H-Tnj"/>
+                <constraint firstItem="91y-Hk-hW6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uh4-JE-lDE"/>
+                <constraint firstItem="Vfi-vz-7DY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vns-40-HDn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

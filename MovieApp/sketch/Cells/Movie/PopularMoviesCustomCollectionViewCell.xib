@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Slo-J6-QDY" customClass="PopularMoviesCustomCollectionViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="125" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-6V-eYO" customClass="BaseView" customModule="MovieApp" customModuleProvider="target">
+                        <rect key="frame" x="2" y="2" width="121" height="196"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6f-gg-XTK">
+                                <rect key="frame" x="8" y="8" width="105" height="180"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.79607843140000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="p6f-gg-XTK" firstAttribute="top" secondItem="NiO-6V-eYO" secondAttribute="top" constant="8" id="WdY-aJ-iFq"/>
+                            <constraint firstItem="p6f-gg-XTK" firstAttribute="leading" secondItem="LYG-mb-ukV" secondAttribute="leading" constant="8" id="d73-K4-fNC"/>
+                            <constraint firstAttribute="height" constant="196" id="tn6-6q-5ga"/>
+                            <constraint firstAttribute="bottom" secondItem="p6f-gg-XTK" secondAttribute="bottom" constant="8" id="wYw-cc-3oc"/>
+                            <constraint firstItem="LYG-mb-ukV" firstAttribute="trailing" secondItem="p6f-gg-XTK" secondAttribute="trailing" constant="8" id="wwW-K6-vuK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LYG-mb-ukV"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NiO-6V-eYO" firstAttribute="top" secondItem="Slo-J6-QDY" secondAttribute="top" constant="2" id="Zsm-yD-uXd"/>
+                <constraint firstAttribute="trailing" secondItem="NiO-6V-eYO" secondAttribute="trailing" constant="2" id="o3e-nR-U23"/>
+                <constraint firstItem="NiO-6V-eYO" firstAttribute="leading" secondItem="Slo-J6-QDY" secondAttribute="leading" constant="2" id="olr-hx-FQo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Awr-7v-lGL"/>
+            <size key="customSize" width="219" height="328"/>
+            <point key="canvasLocation" x="257.97101449275362" y="198.88392857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

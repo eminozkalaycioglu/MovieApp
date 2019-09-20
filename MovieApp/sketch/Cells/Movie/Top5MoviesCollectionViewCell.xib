@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="Top5MoviesCollectionViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-SJ-fBh" customClass="BaseView" customModule="MovieApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="116"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thirdNext" translatesAutoresizingMaskIntoConstraints="NO" id="0AS-OV-I7H">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="116"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0AS-OV-I7H" firstAttribute="top" secondItem="CWd-SJ-fBh" secondAttribute="top" id="BDr-9t-LCN"/>
+                            <constraint firstAttribute="bottom" secondItem="0AS-OV-I7H" secondAttribute="bottom" id="SoI-gQ-Iiv"/>
+                            <constraint firstAttribute="trailing" secondItem="0AS-OV-I7H" secondAttribute="trailing" id="gJV-bE-Ozt"/>
+                            <constraint firstItem="0AS-OV-I7H" firstAttribute="leading" secondItem="CWd-SJ-fBh" secondAttribute="leading" id="sVb-f2-loU"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CWd-SJ-fBh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cb5-Cr-99W"/>
+                <constraint firstAttribute="bottom" secondItem="CWd-SJ-fBh" secondAttribute="bottom" id="Rwu-W2-E2G"/>
+                <constraint firstAttribute="trailing" secondItem="CWd-SJ-fBh" secondAttribute="trailing" id="VkO-PV-lkJ"/>
+                <constraint firstItem="CWd-SJ-fBh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bZH-LU-lAV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="250" height="116"/>
+            <connections>
+                <outlet property="Top5MoviesImage" destination="0AS-OV-I7H" id="hfD-LO-OGP"/>
+            </connections>
+            <point key="canvasLocation" x="282.60869565217394" y="147.99107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="thirdNext" width="384" height="108"/>
+    </resources>
+</document>

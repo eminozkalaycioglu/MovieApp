@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SimilarCollectionViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcG-hp-LyU" customClass="BaseView" customModule="MovieApp" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="134" height="181"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="rKW-X3-ovW">
+                                <rect key="frame" x="0.0" y="0.0" width="134" height="181"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rKW-X3-ovW" firstAttribute="leading" secondItem="hcG-hp-LyU" secondAttribute="leading" id="Ef0-JA-7hL"/>
+                            <constraint firstAttribute="bottom" secondItem="rKW-X3-ovW" secondAttribute="bottom" id="Kdo-BO-BKl"/>
+                            <constraint firstAttribute="trailing" secondItem="rKW-X3-ovW" secondAttribute="trailing" id="gYd-sZ-qmC"/>
+                            <constraint firstItem="rKW-X3-ovW" firstAttribute="top" secondItem="hcG-hp-LyU" secondAttribute="top" id="pJA-NP-lr2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerrRadius">
+                                <real key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-Lt-5I3">
+                        <rect key="frame" x="8" y="197" width="134" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="AUg-QD-uxu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="OKg-Lt-5I3" firstAttribute="top" secondItem="hcG-hp-LyU" secondAttribute="bottom" constant="8" id="3WT-3R-1LY"/>
+                <constraint firstItem="hcG-hp-LyU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Doi-53-TRv"/>
+                <constraint firstItem="OKg-Lt-5I3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="KiH-5f-fD4"/>
+                <constraint firstAttribute="bottom" secondItem="OKg-Lt-5I3" secondAttribute="bottom" constant="8" id="Kuj-ob-tpT"/>
+                <constraint firstItem="hcG-hp-LyU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="lrf-mi-ZVT"/>
+                <constraint firstAttribute="trailing" secondItem="OKg-Lt-5I3" secondAttribute="trailing" constant="8" id="mke-9j-CUe"/>
+                <constraint firstAttribute="trailing" secondItem="hcG-hp-LyU" secondAttribute="trailing" constant="8" id="pWo-0b-y33"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="movieImage" destination="rKW-X3-ovW" id="Eia-wg-YGP"/>
+                <outlet property="movieName" destination="OKg-Lt-5I3" id="G76-t4-AKg"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="53.571428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="153" height="175"/>
+    </resources>
+</document>
